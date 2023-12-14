@@ -1,7 +1,7 @@
-"""
+'''
 @file closedloop.py
 @author: Say Zhee & Will Barics
-"""
+'''
 class ClosedLoop:
     '''!@class ClosedLoop
     @brief Interface with control loops
@@ -9,6 +9,7 @@ class ClosedLoop:
     It allows the user to update the constant of proportionality (Kp), the mode, the reference value. It allows the user to zero the error, get the mode,
       and update the control logic with measured values.
     '''
+
     def __init__(self,Kp,Vref,Mode):
         '''!@brief Constructs a closedloop object
         @details: Initialzes the passed in parameters as well as important local variables
