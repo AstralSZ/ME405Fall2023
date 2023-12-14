@@ -1,7 +1,7 @@
-"""
+'''
 @file encoder.py
-@author: Say Zhee & Will Barics
-"""
+@author Say Zhee & Will Barics
+'''
 from pyb import Pin, Timer
 import time
 
@@ -14,13 +14,13 @@ class Encoder:
 
 
     def __init__(self,AR, Tim_N, CH_A_PIN, CH_B_PIN):
-        '''!@brief Constructs an encoder object
-        @details: Initialzes the passed in parameters as well as important local variables
-        @param AR: Auto-Reload value for the timer
-        @param Tim_N: Timer object created outside of the class
-        @param CH_A_PIN: Encoder Channel A Pin
-        @param CH_B_PIN: Encoder Channel B Pin
-        '''
+        ## @brief Constructs an encoder object
+        # @details: Initialzes the passed in parameters as well as important local variables
+        # @param AR: Auto-Reload value for the timer
+        # @param Tim_N: Timer object created outside of the class
+        # @param CH_A_PIN: Encoder Channel A Pin
+        # @param CH_B_PIN: Encoder Channel B Pin
+        
         self.Tim_N = Tim_N
         self.AR = AR
         self.CHA = Tim_N.channel(1, pin=CH_A_PIN, mode=Timer.ENC_AB)
@@ -38,13 +38,13 @@ class Encoder:
 
 
     def update(self):
-        '''!@brief Updates encoder position and delta
-        @details measures the step between last time called. Updates old position with old count variable, 
-        updates count varible with timer, updates new position with new count varible,
-        updates delta with the difference between new count and old count. Implements logic to add or subtract auto-reload
-        from delta depending on if delta is greater than or less than the auto reload. Updates the position with the new delta.
-        Finaly updates the frame with the new ticks count in microseconds.
-        '''
+        ## @brief Updates encoder position and delta
+        # @details Measures the step between last time called. Updates old position with old count variable, 
+        # updates count varible with timer, updates new position with new count varible,
+        # updates delta with the difference between new count and old count. Implements logic to add or subtract auto-reload
+        # from delta depending on if delta is greater than or less than the auto reload. Updates the position with the new delta.
+        # Finaly updates the frame with the new ticks count in microseconds.
+        
         self.step = time.ticks_diff(time.ticks_us(),self.frame)
         self.old_pos = self.my_count
         self.my_count = self.Tim_N.counter()
@@ -64,25 +64,25 @@ class Encoder:
 
 
     def get_position(self):
-        '''!@brief Gets the most recent encoder position
-        @details Encoder position multiplied by conversion constant to convert to rad
-        @return Position of Romi's wheel in rad
-        '''
+        ## @brief Gets the most recent encoder position
+        # @details Encoder position multiplied by conversion constant to convert to rad
+        # @return Position of Romi's wheel in rad
+        
         return self.position*2*3.14/1440
 
 
     def get_omega(self):
-        '''!@brief Gets the most recent encoder delta and calculates omega through it
-        @details Delta multiplied by conversion constant to convert to rad/s
-        @return Omega of Romi's wheel in rad/s
-        '''
+        ## Gets the most recent encoder delta and calculates omega through it
+        # @details Delta multiplied by conversion constant to convert to rad/s
+        # @return Omega of Romi's wheel in rad/s
+        
         return self.delta*6.28/(1440*(self.step/1000000))
 
 
     def zero(self):
-        '''!@brief Resets the encoder position to zero
-        @details Assigns 0 to delta, postion, and new position (used in update). Sets count variable to current timer value
-        '''
+        ##@brief Resets the encoder position to zero
+        #@details Assigns 0 to delta, postion, and new position (used in update). Sets count variable to current timer value
+        
         self.delta = 0
         self.my_count = self.Tim_N.counter()
         self.new_pos = 0
