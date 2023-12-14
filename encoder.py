@@ -6,7 +6,8 @@ from pyb import Pin, Timer
 import time
 
 class Encoder:
-    '''!@brief Interface with quadrature encoders
+    '''!@class Encoder
+    @brief Interface with Romi's encoders
     @details Encoder class is to be used to create an Encoder object for each motor with an encoder. 
     It allows the user to update the encoder, read the wheel's position in radians, read the wheel's speed in rad/s, and zero the encoder
     '''
@@ -14,7 +15,7 @@ class Encoder:
 
     def __init__(self,AR, Tim_N, CH_A_PIN, CH_B_PIN):
         '''!@brief Constructs an encoder object
-        @details: Initialzes the passes in parameters as well as important local variables
+        @details: Initialzes the passed in parameters as well as important local variables
         @param AR: Auto-Reload value for the timer
         @param Tim_N: Timer object created outside of the class
         @param CH_A_PIN: Encoder Channel A Pin
