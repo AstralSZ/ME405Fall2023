@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['schedule_0',['schedule',['../classcotask_1_1_task.html#af60def0ed4a1bc5fec32f3cf8b8a90c8',1,'cotask::Task']]],
+  ['sensor_20arrays_1',['Different Sensor Arrays',['../subsystem4.html#subsystem4section3',1,'']]],
+  ['sensors_2',['Alternate Proximity Sensors',['../subsystem4.html#subsystem4section2',1,'']]],
+  ['ser_3',['ser',['../classuser__interface_1_1user__interface.html#a0ab7fbaff49c76d6d0c7db6e0810a6a1',1,'user_interface::user_interface']]],
+  ['ser_5fnum_4',['ser_num',['../classtask__share_1_1_queue.html#a6f9d87b116eb16dba0867d3746af9f5f',1,'task_share.Queue.ser_num'],['../classtask__share_1_1_share.html#a2e8df029af46fbfd44ef0c2e7e8c7af6',1,'task_share.Share.ser_num']]],
+  ['set_5fduty_5',['set_duty',['../classromi__motor_1_1_rom.html#a0960b519dcb74302277e655bdbb6f104',1,'romi_motor::Rom']]],
+  ['set_5fkp_6',['set_Kp',['../classclosedloop_1_1_closed_loop.html#a8675af162ac9a12e893f07fbee7ad4ea',1,'closedloop::ClosedLoop']]],
+  ['set_5fperiod_7',['set_period',['../classcotask_1_1_task.html#a0fcee5beb8b2fed77e5125c58ba35c26',1,'cotask::Task']]],
+  ['share_8',['Share',['../classtask__share_1_1_share.html',1,'task_share']]],
+  ['share_5flist_9',['share_list',['../task__share_8py.html#a75818e5b662453e3723d0f234c85e519',1,'task_share']]],
+  ['show_5fall_10',['show_all',['../task__share_8py.html#ad6aea1db68be1a10f72039a5ac9e9dd4',1,'task_share']]],
+  ['software_11',['Software',['../subsystem2.html',1,'']]],
+  ['software_20design_12',['Software Design',['../subsystem2.html#subsystem2section2',1,'']]],
+  ['solving_20the_20maze_13',['Solving the Maze',['../subsystem2.html#subsystem2section3',1,'']]],
+  ['space_14',['Differential Drive State Space',['../subsystem3.html',1,'']]],
+  ['space_20equations_15',['Derivation of State Space Equations',['../subsystem3.html#subsystem3section1',1,'']]],
+  ['start_16',['Logic to Return to Start',['../subsystem4.html#subsysem4section4',1,'']]],
+  ['state_20machines_17',['Task Diagram and State Machines',['../subsystem2.html#subsystem2section4',1,'']]],
+  ['state_20space_18',['Differential Drive State Space',['../subsystem3.html',1,'']]],
+  ['state_20space_20equations_19',['Derivation of State Space Equations',['../subsystem3.html#subsystem3section1',1,'']]],
+  ['step_20',['step',['../classencoder_1_1_encoder.html#adc94abfd8669e3880f5bbf41a3eba307',1,'encoder::Encoder']]],
+  ['sys_5fstatus_21',['sys_status',['../classbno055_1_1_b_n_o055.html#a1818c385dfbd3e19d17830e34f4b1f71',1,'bno055::BNO055']]]
+];
